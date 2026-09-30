@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+#reviewdiv{
+    padding: 100px 20px;
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(135deg,#120C2B,#2A0F4D,#1A0B33);
+}
+#ansRevSection{
+    width: 80%;
+    min-height: 50vh;
+    border-radius: 20px;
+    margin: 0px auto;
+    background: linear-gradient(to right,#120C2B,#2A0F4D,#1A0B33);
+    box-shadow: 0px 0px 10px 2px rgba(234, 231, 231, 0.6);
+    color: white;
+}
+#ansrev{
+    text-align: left;
+    padding: 15px;
+    border-radius: 20px;
+    background-image: linear-gradient(179deg, #2DD4BF, #A855F7);
+    background-origin: content-box;     
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#answers{
+    padding: 15px;
+}
+#backFooter{
+    width: 80%;
+    height: 50px;
+    margin: 10px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#backbtn{
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: 2px solid #4B2A7A;
+    background: linear-gradient(135deg,#e72586,#A855F7);
+    color: #FFFFFF;
+    font-weight: 800;
+    transition: all 0.2s ease;
+    &:hover{
+        cursor: pointer;
+        background: linear-gradient(135deg,#F472B6,#C084FC);
+        border-color: #F472B6;
+        transform: translateY(-2px);
+    }
+}
+
+@media (max-width: 900px) {
+    #reviewdiv {
+        padding: 70px 20px;
+    }
+    #ansRevSection {
+        width: 90%;
+    }
+    #backFooter {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    #reviewdiv {
+        padding: 40px 15px;
+    }
+    #ansRevSection {
+        width: 100%;
+        min-height: 55vh;
+        border-radius: 15px;
+    }
+    #ansrev {
+        padding: 12px;
+        font-size: 22px;
+    }
+    #answers {
+        padding: 12px;
+        font-size: 14px;
+    }
+    #backFooter {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #backbtn {
+        padding: 11px 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    #reviewdiv {
+        padding: 25px 10px;
+    }
+    #ansRevSection {
+        min-height: 60vh;
+    }
+    #ansrev {
+        font-size: 19px;
+    }
+    #answers {
+        font-size: 13px;
+    }
+    #backbtn {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+}
+
